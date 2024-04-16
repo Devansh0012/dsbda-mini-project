@@ -85,5 +85,13 @@
     {% if plot_data %}
     <img src="data:image/png;base64,{{ plot_data }}" alt="Sensor Values">
     {% endif %}
+
+    {% if cm %}
+    <h2>Confusion Matrix</h2>
+    <img src="data:image/png;base64,{{ cm }}" alt="Confusion Matrix">
+    {% endif %}  
+
+
+
 </body>
 </html>
